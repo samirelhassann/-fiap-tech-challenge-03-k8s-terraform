@@ -18,6 +18,13 @@ A esteira do merge na `master` realiza:
 3. Realiza o planejamento da execução via `terraform plan` para verificar se existe algum erro de código.
 4. Aplicação das alterações no provider via `terraform apply`
 
+⚠️ Dado que o objetivo é realizar o run via esteira devops, existe a necessidade de criar um storage account no provider e um container para armazenar as configurações no servidor. Para replicar isso localmente entre na pasta `backend-prepare` e rode o comando
+```bash
+terraform init && terraform apply -auto-approve
+```
+
+Se o login no provider foi feito corretamente (siga esse [link](https://learn.microsoft.com/en-us/cli/azure/get-started-with-azure-cli) caso necessário), o storage account e o contianer será criado corretamente e a referência no main.tf ocorrerá sem problemas.
+
 
 ## Membros
 - [Samir El Hassan](github.com/samirelhassann)
