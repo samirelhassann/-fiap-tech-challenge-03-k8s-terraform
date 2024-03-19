@@ -1,0 +1,13 @@
+bu
+
+backend-prepare/.terraform
+backend-prepare/.terraform.lock.hcl
+backend-prepare/.terraform.tfstate.lock.info
+backend-prepare/terraform.tfstate
+
+infra-old
+
+infra/.terraform
+infra/.terraform.lock.hcl
+infra/.terraform.tfstate.lock.info
+infra/terraform.tfstate
